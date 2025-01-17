@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>APK Installer</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				background-color: #f9f9f9;
+			}
+			.container {
+				padding: 20px;
+			}
+			h1 {
+				color: #333;
+			}
+			p {
+				color: #555;
+			}
+			.download-btn {
+				display: inline-block;
+				margin-top: 20px;
+				padding: 10px 20px;
+				background-color: #007bff;
+				color: white;
+				text-decoration: none;
+				border-radius: 5px;
+				font-size: 18px;
+			}
+			.download-btn:hover {
+				background-color: #0056b3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Download and Install App</h1>
+			<p>
+				Click the button below to download and install the Clothesline apk file.
+			</p>
+			<a
+				href="app/clothesline.apk"
+				class="download-btn"
+				download="clothesline.apk"
+				id="downloadApk"
+			>
+				Download Clothesline App
+			</a>
+		</div>
+
+		<script>
+			// Optional JavaScript for APK handling
+			document
+				.getElementById("downloadApk")
+				.addEventListener("click", function (e) {
+					alert("Your APK download will begin shortly.");
+					// Additional logic can be added here if necessary
+				});
+		</script>
+	</body>
+</html>
